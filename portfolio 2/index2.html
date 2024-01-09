@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #4169E1, #FFDAB9); /* Royal blue and peach gradient background */
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 20px; /* Adjusted padding */
+      background: linear-gradient(45deg, #4169E1, #FFDAB9); /* Royal blue and peach gradient header background */
+    }
+
+    .profile-container {
+      margin-right: 20px; /* Adjusted margin */
+    }
+
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #fff; /* White border for the profile picture */
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #fff; /* White text for header */
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    .about-me {
+      background: linear-gradient(45deg, #4169E1, #FFDAB9); /* Royal blue and peach gradient background for About Me section */
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+      transform: perspective(1000px) rotateY(10deg); /* 3D transformation */
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .about-me:hover {
+      transform: perspective(1000px) rotateY(0deg); /* Reset transform on hover */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px; /* Adjusted padding */
+      transform-style: preserve-3d; /* Enable 3D transformations on child elements */
+      perspective: 1000px; /* Set perspective for child elements */
+    }
+
+    .project-card {
+      background: linear-gradient(45deg, #4169E1, #FFDAB9); /* Royal blue and peach gradient card background */
+      padding: 20px;
+      margin-bottom: 20px; /* Adjusted margin */
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: linear-gradient(45deg, #4169E1, #FFDAB9); /* Royal blue and peach gradient footer background */
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-container {
+        margin: 0;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="profile-container">
+      <img src="profile-picture.jpg" alt="Your Profile Picture" class="profile-picture">
+    </div>
+    <div>
+      <h1>Your Name</h1>
+      <h2>Web Developer</h2>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel turpis nec nulla hendrerit eleifend. Nullam tincidunt, augue et lobortis tristique, ipsum lectus eleifend dolor.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <img src="project1.jpg" alt="Project 1">
+      <p>Description of Project 1.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <img src="project2.jpg" alt="Project 2">
+      <p>Description of Project 2.</p>
+    </div>
+
+    <!-- Add more project cards or sections as needed -->
+
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Your Name - Portfolio</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
